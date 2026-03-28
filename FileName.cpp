@@ -2,11 +2,15 @@
 #include<iomanip>
 using namespace std;
 int main() {
-	for (int i = 1; i <=9; i++) {
-		for (int j = 1; j <= 9; j++) {
-			cout << j << "*" << i << "=" << setw(2)<<j * i << "  ";
+	int i = 1;
+	while(i<9){
+		int j = 1;
+		while(j<9){
+			cout <<j << "*" << i << "=" << setw(2)<<j * i << "  ";
+			j++;
 		}
 		cout << endl;
+		i++;
 	}
 	return 0;
 }
